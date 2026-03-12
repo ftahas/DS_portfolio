@@ -113,6 +113,18 @@ Analyzes 3 experiments (29,000 total observations) covering conversion rates, re
 
 ---
 
+### 9. Financial Market Analysis
+
+> Portfolio optimization, risk management, and Monte Carlo simulation across a multi-asset universe.
+
+Quantitative analysis of 8 assets across 5 sectors over 10+ years (2,737 trading days). Constructs the Markowitz efficient frontier with 8,000 random portfolios, computes VaR/CVaR risk metrics, runs 1,000-path Monte Carlo projections, and overlays bull/bear/high-vol regime detection on performance.
+
+**Best portfolio:** Max Sharpe — SR = 1.56, 10.8% return, 7.0% vol &ensp;|&ensp; **Stack:** SciPy Optimize, NumPy
+
+[`Notebook`](Financial_Market_Analysis.ipynb) &ensp; [`Presentation`](financial_presentation.pdf)
+
+---
+
 ## Tech Stack
 
 <div align="center">
@@ -143,3 +155,4 @@ Analyzes 3 experiments (29,000 total observations) covering conversion rates, re
 | 6 | Fraud Detection | Imbalanced Classif. | AUC-PR | 0.941 |
 | 7 | Supply Chain Forecasting | Multi-Product TS | R² / MAPE | 0.959 / 7.1% |
 | 8 | A/B Testing Framework | Experimentation | — | Freq. + Bayesian |
+| 9 | Financial Market Analysis | Quant Finance | Sharpe Ratio | 1.56 |
