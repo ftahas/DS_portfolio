@@ -125,6 +125,42 @@ Quantitative analysis of 8 assets across 5 sectors over 10+ years (2,737 trading
 
 ---
 
+### 10. Image Classification with CNN Features
+
+> Transfer learning pipeline with t-SNE visualization and multi-class evaluation.
+
+Demonstrates the full CNN image classification workflow on 8,000 synthetic images across 10 classes. Uses 512-dimensional ResNet-style bottleneck features with PCA reduction, t-SNE visualization, inter-class distance analysis, and 4-classifier comparison.
+
+**Result:** Near-perfect accuracy on CNN embeddings &ensp;|&ensp; **Stack:** PCA, t-SNE, Scikit-learn
+
+[`Notebook`](Image_Classification_CNN.ipynb) &ensp; [`Presentation`](cnn_presentation.pdf)
+
+---
+
+### 11. Survival Analysis in Healthcare
+
+> Kaplan-Meier curves, hazard ratios, and clinical risk stratification.
+
+Time-to-event analysis on 4,000 patients with treatment, staging, and biomarker data. Includes KM curves stratified by treatment/stage/smoking, hazard ratio forest plots, 2-year event prediction, calibration analysis, and model-based risk group stratification.
+
+**Best model:** Logistic Regression — AUC = 0.789 &ensp;|&ensp; **Stack:** Survival Analysis, Scikit-learn
+
+[`Notebook`](Survival_Analysis.ipynb) &ensp; [`Presentation`](survival_presentation.pdf)
+
+---
+
+### 12. Recommendation System
+
+> Collaborative filtering with SVD matrix factorization and personalized top-N generation.
+
+Builds and evaluates recommendation models on 1,500 users, 500 items, and ~75K ratings. Compares global/user/item mean baselines against SVD, includes sparsity analysis, genre preference correlations, singular value spectrum, and personalized recommendation output.
+
+**Best model:** SVD (K=20) outperforms baselines &ensp;|&ensp; **Stack:** SciPy SVD, Pandas
+
+[`Notebook`](Recommendation_System.ipynb) &ensp; [`Presentation`](recsys_presentation.pdf)
+
+---
+
 ## Tech Stack
 
 <div align="center">
@@ -156,3 +192,6 @@ Quantitative analysis of 8 assets across 5 sectors over 10+ years (2,737 trading
 | 7 | Supply Chain Forecasting | Multi-Product TS | R² / MAPE | 0.959 / 7.1% |
 | 8 | A/B Testing Framework | Experimentation | — | Freq. + Bayesian |
 | 9 | Financial Market Analysis | Quant Finance | Sharpe Ratio | 1.56 |
+| 10 | Image Classification (CNN) | Deep Learning | Accuracy | ~1.00 |
+| 11 | Survival Analysis | Healthcare | AUC (2-yr) | 0.789 |
+| 12 | Recommendation System | RecSys | RMSE (SVD) | Beats baselines |
