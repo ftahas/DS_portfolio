@@ -209,6 +209,18 @@ Real-time anomaly detection on 30 days of multi-sensor IoT data from an industri
 
 ---
 
+### 17. Credit Risk Modeling
+
+> Banking risk pipeline — PD, LGD, EAD, Expected Loss, Basel capital, stress testing, fairness audit.
+
+End-to-end credit risk modeling on a 15,000-loan portfolio ($375M exposure). Implements the full Basel IRB framework: PD models with industry-standard metrics (Gini, KS), credit scorecards (300-850), LGD regression, Expected Loss computation, Risk-Weighted Assets, stress testing across 5 regulatory scenarios, and Disparate Impact fairness audit.
+
+**Result:** Gini=0.52, KS=0.39 (production-grade); EL=$95.9M; passes 4/5 fair lending rule &ensp;|&ensp; **Stack:** Logistic Regression, Basel IRB, Stress Testing
+
+[`Notebook`](Credit_Risk_Modeling.ipynb) &ensp; [`Presentation`](credit_risk_presentation.pdf)
+
+---
+
 ## Tech Stack
 
 <div align="center">
@@ -247,3 +259,4 @@ Real-time anomaly detection on 30 days of multi-sensor IoT data from an industri
 | 14 | RL Trading Agent | Reinforcement Learning | Sharpe Ratio | 1.73 |
 | 15 | LLM Evaluation Framework | LLM Ops | Top Model Accuracy | 88.8% |
 | 16 | IoT Anomaly Detection | Industrial ML | F1-Score | 0.80 |
+| 17 | Credit Risk Modeling | Banking Risk | Gini / KS | 0.52 / 0.39 |
