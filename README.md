@@ -161,6 +161,54 @@ Builds and evaluates recommendation models on 1,500 users, 500 items, and ~75K r
 
 ---
 
+### 13. MLOps Pipeline
+
+> End-to-end deployment with model versioning, drift detection, A/B testing, and automated retraining.
+
+Production-grade ML pipeline simulating 90 days of model deployment (18,000 predictions). Demonstrates the full MLOps lifecycle: multi-version model registry, real-time accuracy/latency monitoring, drift detection via PSI and calibration analysis, champion/challenger A/B testing, and cost-benefit driven retraining triggers.
+
+**Outcome:** Drift detected at Day 60, retraining yielded **+22% accuracy** &ensp;|&ensp; **Stack:** Scikit-learn, PSI, Drift Detection
+
+[`Notebook`](MLOps_Pipeline.ipynb) &ensp; [`Presentation`](mlops_presentation.pdf)
+
+---
+
+### 14. Reinforcement Learning Trading Agent
+
+> Q-learning agent in a custom Gym-style trading environment, benchmarked against classical strategies.
+
+A tabular Q-learning agent learns to BUY/SELL/HOLD a single asset by interacting with a custom trading environment over 200 training episodes. Trained on 10 years of synthetic price data with bull/bear/sideways regime switching, then benchmarked against Buy & Hold, MA Crossover, and Random strategies.
+
+**Result:** RL achieves +111% test return, Sharpe 1.73, +60 points over Random &ensp;|&ensp; **Stack:** Q-Learning, NumPy, Pandas
+
+[`Notebook`](RL_Trading_Agent.ipynb) &ensp; [`Presentation`](rl_trading_presentation.pdf)
+
+---
+
+### 15. LLM & Agent Evaluation Framework
+
+> Multi-model benchmarking with quality, latency, cost, hallucination, and agent trajectory analysis.
+
+A comprehensive evaluation suite comparing 6 LLMs across 8 task categories (9,600 total evaluations) plus 500 agent trajectories. Includes cost-accuracy Pareto analysis, LLM-as-Judge calibration, pairwise statistical significance testing, and use-case-specific recommendations.
+
+**Result:** Production-ready framework with full leaderboard and Pareto frontier &ensp;|&ensp; **Stack:** Statistical Testing, Pareto Optimization
+
+[`Notebook`](LLM_Evaluation.ipynb) &ensp; [`Presentation`](llm_eval_presentation.pdf)
+
+---
+
+### 16. IoT Anomaly Detection
+
+> Industrial sensor monitoring with statistical, ML, and reconstruction-based methods.
+
+Real-time anomaly detection on 30 days of multi-sensor IoT data from an industrial pump (43,200 timestamps × 5 sensors). Benchmarks 7 methods against 5 distinct anomaly types (spikes, drifts, multivariate failures), with root-cause attribution via PCA reconstruction error.
+
+**Best result:** Z-Score achieves 99.4% precision, F1 = 0.80; PCA AUC-PR = 0.79 &ensp;|&ensp; **Stack:** Isolation Forest, One-Class SVM, PCA
+
+[`Notebook`](IoT_Anomaly_Detection.ipynb) &ensp; [`Presentation`](iot_anomaly_presentation.pdf)
+
+---
+
 ## Tech Stack
 
 <div align="center">
@@ -195,3 +243,7 @@ Builds and evaluates recommendation models on 1,500 users, 500 items, and ~75K r
 | 10 | Image Classification (CNN) | Deep Learning | Accuracy | ~1.00 |
 | 11 | Survival Analysis | Healthcare | AUC (2-yr) | 0.789 |
 | 12 | Recommendation System | RecSys | RMSE (SVD) | Beats baselines |
+| 13 | MLOps Pipeline | Production ML | Retrain Improvement | +22% accuracy |
+| 14 | RL Trading Agent | Reinforcement Learning | Sharpe Ratio | 1.73 |
+| 15 | LLM Evaluation Framework | LLM Ops | Top Model Accuracy | 88.8% |
+| 16 | IoT Anomaly Detection | Industrial ML | F1-Score | 0.80 |
