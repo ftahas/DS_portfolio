@@ -221,6 +221,42 @@ End-to-end credit risk modeling on a 15,000-loan portfolio ($375M exposure). Imp
 
 ---
 
+### 18. Text Summarization Pipeline
+
+> Extractive & abstractive summarization with custom ROUGE evaluation, compression analysis, and statistical testing.
+
+A comprehensive NLP pipeline evaluating 8 summarization methods (5 extractive + 3 abstractive) on an 800-document corpus across 6 domains. Implements ROUGE-1/2/L from scratch, compression-quality tradeoffs, precision-recall analysis, domain-specific evaluation, and Wilcoxon significance testing.
+
+**Result:** Pegasus achieves ROUGE-1=0.69, outperforming best extractive (TF-IDF, 0.41) by +28pp &ensp;|&ensp; **Stack:** ROUGE, TF-IDF, TextRank, LSA
+
+[`Notebook`](Text_Summarization.ipynb) &ensp; [`Presentation`](summarization_presentation.pdf)
+
+---
+
+### 19. Object Detection Pipeline
+
+> Multi-model CV benchmark with custom mAP, error taxonomy, speed-accuracy Pareto, and size-stratified analysis.
+
+Evaluates 5 detection architectures (YOLOv8-L/S, Faster R-CNN, SSD-300, EfficientDet-D2) on a 2,000-image dataset with 8 object classes. Implements mAP@50 and mAP@[.5:.95] from scratch, per-class precision-recall curves, IoU distributions, error taxonomy (classification/localization/background), and confidence threshold tuning.
+
+**Result:** Faster R-CNN leads (mAP@50=0.70); EfficientDet best efficiency (8.1M params) &ensp;|&ensp; **Stack:** mAP, IoU, Object Detection
+
+[`Notebook`](Object_Detection.ipynb) &ensp; [`Presentation`](detection_presentation.pdf)
+
+---
+
+### 20. Bayesian Optimization for Hyperparameter Tuning
+
+> GP surrogate, acquisition functions (EI/UCB/PI), practical HPO benchmark vs Grid/Random search.
+
+Implements Bayesian Optimization from scratch with Gaussian Process surrogates and three acquisition functions. Demonstrates on 1D/2D synthetic benchmarks (Branin) and practical 5D hyperparameter tuning of GradientBoosting. Includes convergence analysis, cumulative regret, exploration-exploitation tradeoff, and GP uncertainty reduction visualization.
+
+**Result:** BO finds best config with lowest cumulative regret; outperforms Grid/Random &ensp;|&ensp; **Stack:** Gaussian Processes, Acquisition Functions
+
+[`Notebook`](Bayesian_Optimization.ipynb) &ensp; [`Presentation`](bo_presentation.pdf)
+
+---
+
 ## Tech Stack
 
 <div align="center">
@@ -260,3 +296,6 @@ End-to-end credit risk modeling on a 15,000-loan portfolio ($375M exposure). Imp
 | 15 | LLM Evaluation Framework | LLM Ops | Top Model Accuracy | 88.8% |
 | 16 | IoT Anomaly Detection | Industrial ML | F1-Score | 0.80 |
 | 17 | Credit Risk Modeling | Banking Risk | Gini / KS | 0.52 / 0.39 |
+| 18 | Text Summarization | NLP / NLG | ROUGE-1 (Pegasus) | 0.691 |
+| 19 | Object Detection | Computer Vision | mAP@50 (F-RCNN) | 0.698 |
+| 20 | Bayesian Optimization | Meta-ML / HPO | Best AUC (BO) | 0.978 |
