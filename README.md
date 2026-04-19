@@ -257,6 +257,30 @@ Implements Bayesian Optimization from scratch with Gaussian Process surrogates a
 
 ---
 
+### 21. Deep Recommender System
+
+> Neural Collaborative Filtering (NeuMF) from scratch, SVD baseline, ranking metrics, cold start analysis.
+
+Implements NeuMF (GMF + MLP paths) from scratch in NumPy. Benchmarked against SVD, popularity, and content-based on 80K interactions with comprehensive ranking evaluation (NDCG, HR, MAP), embedding visualization, cold start analysis, and A/B test simulation.
+
+**Result:** SVD leads (NDCG@10=0.035); NCF learns meaningful embeddings &ensp;|&ensp; **Stack:** Neural Networks, SVD, Ranking Metrics
+
+[`Notebook`](Deep_RecSys.ipynb) &ensp; [`Presentation`](deep_recsys_presentation.pdf)
+
+---
+
+### 22. Time Series Financial Fraud Detection
+
+> Sequential transaction analysis with temporal features, CUSUM change points, and alert fatigue analysis.
+
+Focuses on temporal fraud patterns (burst attacks, escalation, impossible travel, night attacks) rather than static features. Engineers per-customer behavioral features and detects spending regime shifts. Includes CUSUM change point detection and operational alert fatigue analysis.
+
+**Result:** AUC=0.999 with temporal features; 68.5% precision at 80% recall &ensp;|&ensp; **Stack:** Time Series, CUSUM, Isolation Forest
+
+[`Notebook`](TimeSeries_Fraud.ipynb) &ensp; [`Presentation`](ts_fraud_presentation.pdf)
+
+---
+
 ## Tech Stack
 
 <div align="center">
@@ -299,3 +323,6 @@ Implements Bayesian Optimization from scratch with Gaussian Process surrogates a
 | 18 | Text Summarization | NLP / NLG | ROUGE-1 (Pegasus) | 0.691 |
 | 19 | Object Detection | Computer Vision | mAP@50 (F-RCNN) | 0.698 |
 | 20 | Bayesian Optimization | Meta-ML / HPO | Best AUC (BO) | 0.978 |
+| 21 | Deep Recommender System | Deep Learning RecSys | NDCG@10 (SVD) | 0.035 |
+| 22 | TS Fraud Detection | Financial Crime | F1 (GB Temporal) | 0.993 |
+| 22 | TS Financial Fraud | Time Series Fraud | AUC-ROC | 0.999 |
